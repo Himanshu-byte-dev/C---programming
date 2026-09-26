@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+void printstar(int n)
+{
+    for (int i = 0; i < n; i++)
+    {
+        printf("%c", '*');
+    }
+    printf("\n");
+}
+
+int sum(int x, int y)
+{
+    return x + y;
+}
+
+int takenumber()
+{
+    int i;
+    printf("Enter a number:");
+    scanf("%d", &i);
+    return i;
+}
+int main()
+{
+    int a, b, c;
+    a = 7;
+    b = 8;
+    c = sum(a, b);
+    
+    //printstar(5); 
+    c = takenumber();
+    //printf("The sum is %d \n", c); 
+    printf("The number entered is %d \n", c);
+    
+    return 0;
+}
